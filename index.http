@@ -1,0 +1,33 @@
+###
+POST http://localhost:4000/api/signup
+Content-Type: application/json
+
+{
+    "name": "sai",
+    "email": "sai@gmail.com" 
+}
+
+####
+
+POST http://localhost:4000/api/posts
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "content": "This is my first post." 
+}
+
+####
+
+
+DELETE http://localhost:4000/api/deletepost/2
+Content-Type: application/json
+
+{
+    "userId": 12
+}
+
+
+####
+
+GET http://localhost:4000/api/posts/1
